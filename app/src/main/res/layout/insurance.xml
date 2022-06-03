@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        android:textColor="#686868"
+        android:textStyle="bold"
+        android:text="월 보험료"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:background="#FFCD12"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="250,000 원"
+        android:layout_height="30dp"></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_________________________________________________________"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="무엇부터 봐야 할지 막막하세요?"
+        android:textSize="20dp"
+        android:textColor="#686868"
+        android:layout_margin="20dp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#686868"
+        android:textSize="17dp"
+        android:layout_margin="20dp"
+        android:text="회원님께 필요한 내용만 골라 알려드릴게요."></TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inform"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"></ImageView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보험 쉽게 설명 듣기"
+        android:background="#FFCD12"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:id="@+id/inform"
+        android:textStyle="bold"></Button>
+</LinearLayout>

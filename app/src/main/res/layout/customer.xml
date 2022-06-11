@@ -6,7 +6,7 @@
     android:background="#FAECC5"
     android:layout_height="match_parent">
     <Switch
-        android:padding="30dp"
+        android:padding="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"

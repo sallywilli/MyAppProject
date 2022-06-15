@@ -6,7 +6,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Button1 extends ThirdActivity {
+public class Button1 extends ThirdActivity {    //third.xml에 있는 첫번째 버튼인 btn1을 누르면 btn1.xml 화면으로 이동합니다.
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

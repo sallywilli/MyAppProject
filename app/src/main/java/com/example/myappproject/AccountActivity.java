@@ -37,21 +37,21 @@ public class AccountActivity extends AppCompatActivity {
         update = findViewById(R.id.update);
         total = findViewById(R.id.total);
 
-        logo1.setOnClickListener(new View.OnClickListener() {
+        logo1.setOnClickListener(new View.OnClickListener() { //해당 은행 이미지버튼 클릭하면 송금창으로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SendActivity.class);
                 startActivity(intent);
             }
         });
-        logo2.setOnClickListener(new View.OnClickListener() {
+        logo2.setOnClickListener(new View.OnClickListener() {   //해당 은행 이미지버튼 클릭하면 송금창으로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SendActivity.class);
                 startActivity(intent);
             }
         });
-        logo3.setOnClickListener(new View.OnClickListener() {
+        logo3.setOnClickListener(new View.OnClickListener() {   //해당 은행 이미지버튼 클릭하면 송금창으로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SendActivity.class);
@@ -69,7 +69,7 @@ public class AccountActivity extends AppCompatActivity {
             str2 = money2.getText().toString();
             str3 = money3.getText().toString();
             result = Integer.parseInt(str1) + Integer.parseInt(str2) + Integer.parseInt(str3);
-            total.setText("총 계좌 잔액: " + result.toString());
+            total.setText("총 계좌 잔액: " + result.toString()); //앞서 금액을 입력하고 업데이트 버튼을 누르면 총 계좌 잔액으로 금액들이 합산되어 보여집니다.
             return false;
         }
     }

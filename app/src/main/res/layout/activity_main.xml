@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
+        <Button              //화면 가장 윗편 왼쪽 버튼
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -21,7 +21,7 @@
             android:textColor="#686868"
             android:id="@+id/btn1"
             android:text="내 정보"></Button>
-        <Button
+        <Button              //화면 가장 윗편 가운데 버튼
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -30,7 +30,7 @@
             android:textColor="#686868"
             android:id="@+id/btn2"
             android:text="고객센터"></Button>
-        <Button
+        <Button              //화면 가장 윗편 오른쪽 버튼
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="vertical">
-            <TextView
+            <TextView                           //계좌텍스트
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -59,7 +59,7 @@
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:text="계좌"></TextView>
-            <ImageButton
+            <ImageButton                        //계좌 이미지 버튼 클릭 시 화면 이동
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFCD12"
@@ -72,7 +72,7 @@
             android:layout_weight="1"
             android:layout_gravity="center"
             android:orientation="vertical">
-            <TextView
+            <TextView                       //소비 텍스트
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30dp"
@@ -80,7 +80,7 @@
                 android:textColor="#000000"
                 android:layout_gravity="center"
                 android:text="소비"></TextView>
-            <ImageButton
+            <ImageButton                    //소비 이미지 버튼 클릭 시 화면 이동
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -95,14 +95,14 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
-            <TextView
+            <TextView                   //카드 혜택 텍스트
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30dp"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:text="Card Benefit"></TextView>
-            <ImageButton
+            <ImageButton                    //카드혜택 이미지 버튼 클릭 시 화면 이동
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/benefit"
@@ -115,14 +115,14 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
-            <TextView
+            <TextView                        //보험 텍스트
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Insurance"
                 android:textColor="#000000"
                 android:textSize="30dp"
                 android:textStyle="bold"></TextView>
-            <ImageButton
+            <ImageButton                    //보험 이미지 버튼 클릭 시 화면 이동
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/insurance"

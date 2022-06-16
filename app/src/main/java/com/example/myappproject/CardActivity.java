@@ -28,25 +28,25 @@ public class CardActivity extends MainActivity {
         ck3 = findViewById(R.id.ck3);
         ck4 = findViewById(R.id.ck4);
 
-                ck1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                ck1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {   //첫번째 체크박스 클릭 시 메시지 창 팝업
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                         if(b == true){
                             AlertDialog.Builder dlg = new AlertDialog.Builder(CardActivity.this);
-                            dlg.setTitle("카드 신청");
-                            dlg.setMessage("선택 카드: 토스 D4@카드의 정석 우리카드");
+                            dlg.setTitle("카드 신청");  //메시지 창 제목 설정
+                            dlg.setMessage("선택 카드: 토스 D4@카드의 정석 우리카드"); //메시지 창 문구
                             dlg.setIcon(R.drawable.title);
                             dlg.setPositiveButton("확인",null);
                             dlg.show();
                         }
                     }
                 });
-                ck2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                ck2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {   //두번째 체크박스 클릭 시 메시지 창 팝업
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                         if(b == true){
                             AlertDialog.Builder dlg1 = new AlertDialog.Builder(CardActivity.this);
-                            dlg1.setTitle("카드 신청");
+                            dlg1.setTitle("카드 신청"); 
                             dlg1.setMessage("선택 카드: KB국민 톡톡with 토스");
                             dlg1.setIcon(R.drawable.title);
                             dlg1.setPositiveButton("확인",null);
@@ -54,7 +54,7 @@ public class CardActivity extends MainActivity {
                         }
                     }
                 });
-                ck3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                ck3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {   //세번째 체크박스 클릭 시 메시지 창 팝업
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                         if(b == true){
@@ -67,7 +67,7 @@ public class CardActivity extends MainActivity {
                         }
                     }
                 });
-                ck4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                ck4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {   //네번째 체크박스 클릭 시 메시지 창 팝업
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                         if(b == true){

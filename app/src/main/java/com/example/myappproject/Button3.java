@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-public class Button3 extends ThirdActivity{
+public class Button3 extends ThirdActivity{ //third.xml에 있는 세번째 버튼인 btn3을 누르면 btn3.xml 화면으로 이동합니다.
 
     Button complete;
     CheckBox check1, check2;
@@ -43,7 +43,7 @@ public class Button3 extends ThirdActivity{
             }
         });
 
-        check1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        check1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {    //체크박스1 클릭 시 안 보이도록 해 놓은 텍스트뷰와 에디트텍스트가 보입니다
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b == true){
@@ -60,7 +60,7 @@ public class Button3 extends ThirdActivity{
                 }
             }
         });
-        check2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        check2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {    //체크박스2 클릭 시 안 보이도록 해 놓은 텍스트뷰와 에디트텍스트가 보입니다
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b == true){
@@ -77,7 +77,7 @@ public class Button3 extends ThirdActivity{
                 }
             }
         });
-        complete.setOnClickListener(new View.OnClickListener() {
+        complete.setOnClickListener(new View.OnClickListener() {    //완료 버튼 클릭 시 카드 추가 완료 문구로 토스트가 뜹니다
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "카드 추가가 완료되었습니다",

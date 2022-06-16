@@ -7,27 +7,27 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <TextView                   //버튼 클릭 시 기록하고자 입력한 금액이 문구와 함께 이 곳에 나타남
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:id="@+id/now"
         android:textSize="30dp"
         android:textStyle="bold"></TextView>
-    <DatePicker
+    <DatePicker                 //텍스트파일로 저장할 날짜 선택
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dp"
         android:datePickerMode="spinner"
         android:calendarViewShown="false"></DatePicker>
-    <EditText
+    <EditText                   //소비 기록 입력 칸
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:id="@+id/et"
         android:background="#FAECC5"
         android:lines="8"></EditText>
-    <Button
+    <Button                     //저장 버튼. java 파일에 의해 새로 저장 또는 수정하기 버튼으로 유동적으로 바뀜
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn"

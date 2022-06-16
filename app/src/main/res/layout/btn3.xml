@@ -6,7 +6,7 @@
     android:padding="10dp"
     android:background="#FAECC5">
 
-    <CheckBox
+    <CheckBox                   //체크박스1 클릭 시 다른 위젯들이 보여짐
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="신용카드"
@@ -14,7 +14,7 @@
         android:textColor="#000000"
         android:layout_weight="1"
         android:id="@+id/check1"></CheckBox>
-    <CheckBox
+    <CheckBox                   //체크박스 2 클릭 시 다른 위젯들이 보여짐
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="체크카드"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal">
-    <TextView
+    <TextView                           //텍스트뷰 위젯
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="invisible"
@@ -35,7 +35,7 @@
         android:textColor="#000000"
         android:textSize="20dp"
         android:text="카드번호: "></TextView>
-        <EditText
+        <EditText                       //등록할 카드 번호 입력칸
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="invisible"
@@ -55,13 +55,13 @@
         android:textColor="#000000"
         android:textSize="20dp"
         android:text="유효 기간"></TextView>
-        <DatePicker
+        <DatePicker                     //카드 유효기간 선택할 데이트피커
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/dp"
             android:visibility="invisible"></DatePicker>
     </LinearLayout>
-    <Button
+    <Button                 //등록 완료 버튼
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

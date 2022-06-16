@@ -19,19 +19,19 @@ public class SendActivity extends TabActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.send);
+        setContentView(R.layout.send);      //send.xml 화면이 보여집니다.
 
         TabHost tabHost = getTabHost();
 
-        TabHost.TabSpec tab1 = tabHost.newTabSpec("tab1").setIndicator("추천");
+        TabHost.TabSpec tab1 = tabHost.newTabSpec("tab1").setIndicator("추천");   //탭호스트 1
         tab1.setContent(R.id.tab1);
         tabHost.addTab(tab1);
 
-        TabHost.TabSpec tab2 = tabHost.newTabSpec("tab2").setIndicator("즐겨찾기");
+        TabHost.TabSpec tab2 = tabHost.newTabSpec("tab2").setIndicator("즐겨찾기");     //탭호스트 2
         tab2.setContent(R.id.tab2);
         tabHost.addTab(tab2);
 
-        TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3").setIndicator("연락처");
+        TabHost.TabSpec tab3 = tabHost.newTabSpec("tab3").setIndicator("연락처");      //탭호스트 3
         tab3.setContent(R.id.tab3);
         tabHost.addTab(tab3);
 
@@ -47,106 +47,106 @@ public class SendActivity extends TabActivity {
         ib4 = findViewById(R.id.ib4); ib5 = findViewById(R.id.ib5); ib6 = findViewById(R.id.ib6);
         ib7 = findViewById(R.id.ib7); ib8 = findViewById(R.id.ib8);
 
-        b1.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {      //계좌번호버튼 클릭 시 송금 창으로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SendActivity2.class);
                 startActivity(intent);
             }
         });
-        b2.setOnClickListener(new View.OnClickListener() {
+        b2.setOnClickListener(new View.OnClickListener() {      //계좌번호버튼 클릭 시 송금 창으로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SendActivity2.class);
                 startActivity(intent);
             }
         });
-        b4.setOnClickListener(new View.OnClickListener() {
+        b4.setOnClickListener(new View.OnClickListener() {      //계좌번호버튼 클릭 시 송금 창으로 이동
             @Override
             public void onClick(View view) {
-                image1.setVisibility(View.VISIBLE);
-                b8.setVisibility(View.VISIBLE);
+                image1.setVisibility(View.VISIBLE);     //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
+                b8.setVisibility(View.VISIBLE);         //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
                 Intent intent = new Intent(getApplicationContext(), SendActivity2.class);
                 startActivity(intent);
             }
         });
-        b5.setOnClickListener(new View.OnClickListener() {
+        b5.setOnClickListener(new View.OnClickListener() {      //계좌번호버튼 클릭 시 송금 창으로 이동
             @Override
             public void onClick(View view) {
-                image2.setVisibility(View.VISIBLE);
-                b9.setVisibility(View.VISIBLE);
+                image2.setVisibility(View.VISIBLE);     //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
+                b9.setVisibility(View.VISIBLE);         //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
                 Intent intent = new Intent(getApplicationContext(), SendActivity2.class);
                 startActivity(intent);
             }
         });
-        b6.setOnClickListener(new View.OnClickListener() {
-            @Override
+        b6.setOnClickListener(new View.OnClickListener() {      //계좌번호버튼 클릭 시 송금 창으로 이동
+            @Override   
             public void onClick(View view) {
-                image3.setVisibility(View.VISIBLE);
-                b10.setVisibility(View.VISIBLE);
+                image3.setVisibility(View.VISIBLE);     //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
+                b10.setVisibility(View.VISIBLE);        //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
                 Intent intent = new Intent(getApplicationContext(), SendActivity2.class);
                 startActivity(intent);
             }
         });
-        b7.setOnClickListener(new View.OnClickListener() {
+        b7.setOnClickListener(new View.OnClickListener() {      //계좌번호버튼 클릭 시 송금 창으로 이동
             @Override
             public void onClick(View view) {
-                image4.setVisibility(View.VISIBLE);
-                b11.setVisibility(View.VISIBLE);
+                image4.setVisibility(View.VISIBLE);     //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
+                b11.setVisibility(View.VISIBLE);        //자주 송금하는 계좌로 인식하여 즐겨찾기 탭에서 보이게 됨
                 Intent intent = new Intent(getApplicationContext(), SendActivity2.class);
                 startActivity(intent);
             }
         });
-        ib1.setOnClickListener(new View.OnClickListener() {
+        ib1.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-1111-1111"));
                 startActivity(intent);
             }
         });
-        ib2.setOnClickListener(new View.OnClickListener() {
+        ib2.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-2222-2222"));
                 startActivity(intent);
             }
         });
-        ib3.setOnClickListener(new View.OnClickListener() {
+        ib3.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-3333-3333"));
                 startActivity(intent);
             }
         });
-        ib4.setOnClickListener(new View.OnClickListener() {
+        ib4.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-4444-4444"));
                 startActivity(intent);
             }
         });
-        ib5.setOnClickListener(new View.OnClickListener() {
+        ib5.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-5555-5555"));
                 startActivity(intent);
             }
         });
-        ib6.setOnClickListener(new View.OnClickListener() {
+        ib6.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-6666-6666"));
                 startActivity(intent);
             }
         });
-        ib7.setOnClickListener(new View.OnClickListener() {
+        ib7.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-7777-7777"));
                 startActivity(intent);
             }
         });
-        ib8.setOnClickListener(new View.OnClickListener() {
+        ib8.setOnClickListener(new View.OnClickListener() {     //이미지 버튼 클릭 시 해당 전화번호 다이얼로 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-8888-8888"));

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"            //설정창에서 버튼 1화면
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,14 +11,14 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal">
-    <TextView
+    <TextView                            //텍스트 위젯     
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="#686868"
         android:text="FaceID"></TextView>
-    <Switch
+    <Switch                             //스위치 설정 위젯. 아래 구성은 동일
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:checked="true" />

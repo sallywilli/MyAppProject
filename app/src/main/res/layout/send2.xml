@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:background="#FAECC5"
     android:layout_height="match_parent">
-    <EditText
+    <EditText                           //송금할 금액 입력 칸
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="얼마나 보낼까요?"
         android:id="@+id/e1"
         android:textSize="30dp"></EditText>
-    <TextView
+    <TextView                           //버튼 클릭 시 이 부분에 잔액이 계산되어 나타남. (총액-송금잔액)
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
@@ -20,8 +20,8 @@
         android:layout_columnSpan="2"
         android:id="@+id/total2"
         android:textSize="30dp"></TextView>
-    <Button
-        android:layout_width="match_parent"
+    <Button                         //송금확인 버튼
+        android:layout_width="match_parent" 
         android:layout_height="wrap_content"
         android:background="#FFCD12"
         android:id="@+id/ok"

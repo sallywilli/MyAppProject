@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"          //스크롤뷰. 내 정보 조회 및 수정 창
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:padding="20dp"
@@ -9,11 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <ImageView
+        <ImageView                              //사람 아이콘
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/icon"></ImageView>
-        <TextView
+        <TextView                               //이름
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et1"></EditText>
-        <TextView
+        <TextView                           //생년월일
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et2"></EditText>
-        <TextView
+        <TextView                       //이메일 주소
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/t3"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et3"></EditText>
-        <TextView
+        <TextView                           //전화번호
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et4"></EditText>
-        <TextView
+        <TextView                           //집 주소
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et5"></EditText>
-        <TextView
+        <TextView                           //집 전화번호
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000000"
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/et6"></EditText>
-    <Button
+    <Button                                 //입력 버튼 클릭 시 메시지 창 팝업. 이 곳에 내 정보 입력 가능. 입력한 내 정보는 본 화면에 나타남
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

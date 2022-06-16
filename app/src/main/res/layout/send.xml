@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"             //탭호스트. 계좌 창
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@android:id/tabhost"
@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:textColor="#686868"
             android:id="@android:id/tabs"></TabWidget>
-        <FrameLayout
+        <FrameLayout                            //프레임 레이아웃으로 구성
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -27,8 +27,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/tab1">
-                <TextView
+                android:id="@+id/tab1">             //탭호스트1
+                <TextView           
                     android:padding="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -40,18 +40,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <ImageView
+                    <ImageView                  //은행 이미지 뷰
                         android:layout_width="166dp"
                         android:layout_height="66dp"
                         android:src="@drawable/nong"></ImageView>
-                    <Button
+                    <Button                     // 계좌번호버튼 클릭 시 송금진행 창으로 이동
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
                         android:id="@+id/b1"
                         android:text="NH농협 67685705059966"></Button>
                 </LinearLayout>
-                <LinearLayout
+                <LinearLayout                   //아래 위젯 구성은 위와 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -141,18 +141,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/tab2">
+                android:id="@+id/tab2">                 //탭호스트2 즐겨찾기
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <ImageView
+                    <ImageView                      //일단 초기엔 안 보이도록 설정. 앞 탭호스트1 화면에서 원하는 계좌 1번 이상 클릭 시 보여지기 시작.
                         android:layout_width="166dp"
                         android:layout_height="66dp"
                         android:visibility="invisible"
                         android:id="@+id/image1"
                         android:src="@drawable/hana"></ImageView>
-                    <Button
+                    <Button                         //일단 초기엔 안 보이도록 설정. 앞 탭호스트1 화면에서 원하는 계좌 1번 이상 클릭 시 보여지기 시작.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
@@ -160,7 +160,7 @@
                         android:visibility="invisible"
                         android:text="하나 33340499600933"></Button>
                 </LinearLayout>
-                <LinearLayout
+                <LinearLayout                       //구성은 바로 위와 동일
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -216,7 +216,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
+            <LinearLayout                       //탭호스트3 전화번호부
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -225,7 +225,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <ImageButton
+                <ImageButton                        //이미지 버튼 클릭 시 다이얼로 이동
                     android:layout_width="177dp"
                     android:layout_height="77dp"
                     android:id="@+id/ib1"
@@ -235,18 +235,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <TextView
+                    <TextView                               //연락처 이름
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:text="김이박"></TextView>
-                    <TextView
+                    <TextView                               //전화번호
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:text="010-1111-1111"></TextView>
                 </LinearLayout>
-            </LinearLayout>
+            </LinearLayout>                 //아래 구성은 바로 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

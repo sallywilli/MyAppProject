@@ -24,12 +24,12 @@ public class CustomerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customer);
 
-        final MediaPlayer mPlayer;
-        mPlayer = MediaPlayer.create(this,R.raw.song1);
+        final MediaPlayer mPlayer;  
+        mPlayer = MediaPlayer.create(this,R.raw.song1);     //오디오 서비스
 
-        final Switch switch1 = findViewById(R.id.switch1);
+        final Switch switch1 = findViewById(R.id.switch1);  //오디오 서비스를 위한 스위치 기능
 
-        switch1.setOnClickListener(new View.OnClickListener() {
+        switch1.setOnClickListener(new View.OnClickListener() {     //스위치 클릭 시 음악 재생 및 중지
             @Override
             public void onClick(View view) {
                 if (switch1.isChecked() == true)
@@ -46,12 +46,12 @@ public class CustomerActivity extends AppCompatActivity {
         registerForContextMenu(customer);
     }
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {   //콘텍스트 메뉴 기능
         super.onCreateContextMenu(menu, v, menuInfo);
 
         MenuInflater menuInflater = getMenuInflater();
         if (v == customer){
-            menu.setHeaderTitle("고객센터");
+            menu.setHeaderTitle("고객센터");    //콘텍스트 메뉴 제목
             menuInflater.inflate(R.menu.menu1, menu);
         }
     }
@@ -59,13 +59,13 @@ public class CustomerActivity extends AppCompatActivity {
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         super.onContextItemSelected(item);
         switch (item.getItemId()){
-            case R.id.item1:
-                Uri uri = Uri.parse("tel:/1588-9999");
+            case R.id.item1:    //첫번째 메뉴 선택 시
+                Uri uri = Uri.parse("tel:/1588-9999");  //해당 전화번호 다이얼로 이동
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
                 return true;
-            case R.id.item2:
-                Uri uri1 = Uri.parse("tel:/1599-9999");
+            case R.id.item2:    //두번째 메뉴 선택 시
+                Uri uri1 = Uri.parse("tel:/1599-9999"); //해당 전화번호 다이얼로 이동
                 Intent intent2 = new Intent(Intent.ACTION_VIEW, uri1);
                 startActivity(intent2);
                 return true;

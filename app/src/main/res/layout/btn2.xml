@@ -9,14 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
+        <TextView                           //텍스트뷰 위젯
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="#686868"
             android:text="소리 크기"></TextView>
-        <SeekBar
+        <SeekBar                            //시크바 조절 가능
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:progress="60"></SeekBar>
@@ -26,14 +26,14 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <TextView
+        <TextView                           //텍스트뷰 위젯
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:textColor="#686868"
             android:textStyle="bold"
             android:text="문자알림"></TextView>
-        <Switch
+        <Switch                             //스위치 위젯 설정. 아래 구성은 동일
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:checked="false" />

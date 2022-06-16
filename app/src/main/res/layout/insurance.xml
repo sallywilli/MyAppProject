@@ -44,7 +44,7 @@
         android:src="@drawable/inform"
         android:layout_margin="20dp"
         android:layout_gravity="center"></ImageView>
-    <Button
+    <Button                         //클릭 시 전화상담이 가능한 전화걸기 창으로 이동됨
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="보험 쉽게 설명 듣기"

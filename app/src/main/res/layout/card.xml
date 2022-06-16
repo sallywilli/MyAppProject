@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"          //그리드 구성. 카드혜택 창
     android:orientation="vertical"
     android:columnCount="2"
     android:rowCount="12"
@@ -7,14 +7,14 @@
     android:padding="20dp"
     android:background="#FAECC5"
     android:layout_height="match_parent">
-    <CheckBox
+    <CheckBox                       //카드를 선택할 체크박스 위젯. 클릭 시 메시지창 팝업
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#FFCD12"
         android:id="@+id/ck1"
         android:layout_column="0"
         android:layout_row="0"></CheckBox>
-    <ImageButton
+    <ImageButton                    //카드 이미지버튼
         android:layout_width="60dp"
         android:layout_height="115dp"
         android:layout_row="0"
@@ -23,17 +23,17 @@
         android:id="@+id/card1"
         android:layout_margin="10dp"
         android:src="@drawable/card1"></ImageButton>
-    <TextView
+    <TextView                       //카드 이름
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:textStyle="bold"
+        android:textStyle="bold"    
         android:layout_column="1"
         android:layout_row="0"
         android:textColor="#686868"
         android:layout_margin="10dp"
         android:text="             토스 D4@카드의 정석 우리카드"></TextView>
-    <TextView
+    <TextView                       //카드 혜택 정보
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_row="1"
@@ -44,7 +44,7 @@
         android:text="                 카페55%, 교통33%, 편의점11% 할인"
         android:textSize="15dp"></TextView>
 
-    <CheckBox
+    <CheckBox                       //아래 구성은 위와 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"

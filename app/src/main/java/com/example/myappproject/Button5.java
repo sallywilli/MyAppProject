@@ -26,7 +26,7 @@ public class Button5 extends ThirdActivity{
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder dlg = new AlertDialog.Builder(Button5.this);
-                dlg.setTitle("회원탈퇴");   //창 제목 설정
+                dlg.setTitle("회원탈퇴");   //메시지 창 제목 설정
                 dlg.setMessage("이용해주셔서 감사합니다");     //탈퇴하기 버튼 클릭 시 메시지 창이 뜹니다
                 dlg.setIcon(R.drawable.title);
                 dlg.setPositiveButton("확인", null);

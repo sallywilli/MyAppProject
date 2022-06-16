@@ -49,49 +49,49 @@ public class MainActivity extends AppCompatActivity{
 
         registerForContextMenu(btn2);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {    //첫번째 버튼인 '내 정보' 버튼 클릭 시 화면 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                 startActivity(intent);
             }
         });
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {    //두번째 버튼인 '고객센터' 버튼 클릭 시 화면 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CustomerActivity.class);
                 startActivity(intent);
             }
         });
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {    //세번째 버튼인 '설정' 버튼 클릭 시 화면 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ThirdActivity.class);
                 startActivity(intent);
             }
         });
-        account.setOnClickListener(new View.OnClickListener() {
+        account.setOnClickListener(new View.OnClickListener() {     //계좌 버튼 클릭 시 화면 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AccountActivity.class);
                 startActivity(intent);
             }
         });
-        benefit.setOnClickListener(new View.OnClickListener() {
+        benefit.setOnClickListener(new View.OnClickListener() {     //카드 혜택 버튼 클릭 시 화면 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CardActivity.class);
                 startActivity(intent);
             }
         });
-        insurance.setOnClickListener(new View.OnClickListener() {
+        insurance.setOnClickListener(new View.OnClickListener() {   //보험 버튼 클릭 시 화면 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), InformActivity.class);
                 startActivity(intent);
             }
         });
-        consumption.setOnClickListener(new View.OnClickListener() {
+        consumption.setOnClickListener(new View.OnClickListener() {     //소비 버튼 클릭 시 화면 이동
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SpendActivity.class);
